@@ -9,9 +9,79 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- Font-awesome  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Google Font lato -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    .lato{
+        font-family: 'Lato', sans-serif; 
+    }
+</style>
 <!--  -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#F85559',
+
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    
+<body class="lato">
+    <header>
+     <nav class="bg-primary rounded-3xl max-w-screen-xl mx-auto my-14 px-8 md:px-12 lg:px-16 py-8">
+       <div class="hidden lg:block">
+        <div class="flex justify-between items-center ">
+            <div class="flex justify-start items-center list-none gap-8">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">All Fruits</a></li>
+            </div>
+        <div class="flex items-center">
+            <img src="images/logo.png" alt="">
+            <h1 class="text-4xl font-bold">Fruit Burst</h1>
+        </div>
+        <div class="">
+            <label for=""> </label>
+            <input type="text"  placeholder="Search here" class="input input-bordered w-24 md:w-auto"> 
+        </div>
+        </div>
+       </div>
+       <!-- Navbar For Tablet -->
+      <div class="hidden md:block lg:hidden">
+        <div class="flex items-center justify-between ">
+            <div class="">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="">
+                <h1 class="text-4xl font-bold">Fruit Burst</h1>
+           </div>
+           <div class="">
+            <label for=""> </label>
+            <input type="text"  placeholder="Search here" class="input input-bordered w-24 md:w-auto"> 
+        </div>
+           </div>
+      </div>
+        <!-- Navbar For Mobile -->
+        <div class="flex justify-between items-center block md:hidden">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="">
+                <h1 class="text-4xl font-bold">Fruit Burst</h1>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+     </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
